@@ -232,3 +232,59 @@ footer ul {
         width: 100%;
     }
 }
+
+@media (max-width: 450px) {
+
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .bg-header {
+        height: 200px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    
+    section > div {
+        flex-direction: column;
+    }
+
+    
+    #card-section > div {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    
+    .formulario,
+    .contacto {
+        width: 100%;
+        text-align: left;
+    }
+
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    footer > div {
+        width: 100%;
+    }
+
+    
+    .news-letter > input[type="submit"] {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
