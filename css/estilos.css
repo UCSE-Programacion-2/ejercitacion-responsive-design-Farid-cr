@@ -195,7 +195,7 @@ footer ul {
         gap: 15px;
     }
 
-     h2 {
+    h2 {
         font-size: 1.7rem;
         margin-bottom: 20px;
     }
@@ -218,6 +218,7 @@ footer ul {
 
     .card {
         width: 80%;
+        max-width: 400px;
     }
 
     section > div {
@@ -244,11 +245,13 @@ footer ul {
     }
 }
 
-@media (max-width: 450px) {
+body {
+    overflow-x: hidden;
+}
 
-    nav {
-        padding: 12px;
-    }
+
+@media (max-width: 450px) {
+    
 
     nav ul {
         flex-direction: column;
@@ -256,36 +259,42 @@ footer ul {
         gap: 10px;
     }
 
-    nav ul li a {
-        display: block;
-        padding: 8px;
-    }
-
     .bg-header h1 {
         font-size: 1.8rem;
-        text-align: center;
     }
+    
 
-    h2 {
-        font-size: 1.5rem;
-        margin-bottom: 15px;
-    }
-
-    section,
-    footer {
-        padding: 25px 15px;
-    }
 
     .card {
-        padding: 15px;
+        width: 100%;
+        margin: 12px 0;
     }
 
-    .card > h3 {
-        font-size: 1.3rem;
+    .bg-header {
+        height: 180px;
     }
 
-    .contacto,
-    .formulario {
-        padding: 20px 0;
+    section > div,
+    #card-section > div {
+        width: 100%;
     }
+
+    form {
+        padding: 25px 20px 5px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .news-letter > input[type="text"],
+    .news-letter > input[type="submit"] {
+        width: 100%;
+    }
+
+    .news-letter > input[type="submit"] {
+        position: static;
+        margin-top: 10px;
+    }
+    
 }
